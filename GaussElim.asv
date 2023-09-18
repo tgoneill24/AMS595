@@ -19,7 +19,7 @@ else
 end
 
 % Store system as augmented matrix
-aug = [A b.'];
+aug = [A b.']
 
 % Convert to echelon form
 for j = 1:n
@@ -55,8 +55,6 @@ for i=1:n
     iDiag = aug(i, i);
     if iDiag ~= 0
         aug(i, :) = aug(i, :) / iDiag;
-    else
-        error("A is nonsingular")
     end
 end
 
@@ -69,7 +67,6 @@ for i=1:n-1
 
 end
 
-% Return last column of augmented matrix
-x = aug(:, n+1);
+x = aug();
 
 end
