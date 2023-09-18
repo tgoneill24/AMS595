@@ -1,3 +1,4 @@
+% Set number of datapoints to plot
 numPoints = 50;
 
 n = zeros(1,numPoints);
@@ -6,6 +7,8 @@ y = zeros(1,numPoints);
 time = zeros(1,numPoints);
 piApprox = zeros(1,numPoints);
 
+% Time the code for exponentially increasing values of n
+
 for i=1:numPoints
     n(i)=floor(1.2^i);
     tic
@@ -13,6 +16,7 @@ for i=1:numPoints
     time(i) = toc;
 end
 
+% Label plots
 
 plot(n, time)
 xlabel('n') 
@@ -54,6 +58,8 @@ for i=1:n
     
     drawnow
 end
+
+% Add title
 
 txt = strcat('Pi Approximation: ', num2str(cnt/n*4, 5));
 title(txt)
