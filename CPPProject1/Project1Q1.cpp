@@ -2,24 +2,24 @@
 using namespace std;
 
 int main() {
+
     int n;
-    cout << "Enter a number: ";
+    cout << "Enter a number:" << endl;
     cin >> n;
 
     switch (n) {
         case -1:
-            cout << "negative one";
+            cout << "negative one" << endl;
             break;
         case 0:
-            cout << "zero";
+            cout << "zero" << endl;
             break;
         case 1:
-            cout << "positive one";
+            cout << "positive one" << endl;
             break;
         default:
-            cout << "other value";
+            cout << "other value" << endl;
     }
-
 
     return 0;
 }
