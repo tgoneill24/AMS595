@@ -1,3 +1,8 @@
-#include <vector>
+#pragma once
 
-float* approximations(std::vector<int> n);
+struct PiResults {
+        float approx;
+        float error;
+    };
+
+PiResults pi_approx(int N);

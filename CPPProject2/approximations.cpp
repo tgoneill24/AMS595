@@ -1,7 +1,6 @@
+#include "approximations.h"
 #include <math.h>
 #include <vector>
-#include "pi_approx.h"
-#include "approximations.h"
 
 float* approximations(std::vector<int> n){
     float* arr = new float[n.size()];

@@ -1,6 +1,5 @@
 #include <iostream>
-#include "approximations.h"
-#include "pi_approx.h"
+#include "HW2main.h"
 using namespace std;
 
 int main() {

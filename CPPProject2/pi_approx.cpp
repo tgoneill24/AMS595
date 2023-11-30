@@ -1,5 +1,4 @@
 #include <math.h>
-#include "pi_approx.h"
 
 struct PiResults {
         float approx;
@@ -16,7 +15,7 @@ PiResults pi_approx(int N) {
     }
     results.approx = sum*4.0;
 
-    results.error = abs(results.approx-M_PI);
+    results.error = abs(results.approx-3.1415926);
 
     return results;
 }
