@@ -2,9 +2,9 @@
 #include <math.h>
 #include <vector>
 
-float* approximations(std::vector<int> n){
-    float* arr = new float[n.size()];
-    for (int i=0; i<=n.size(); i++) {
+double* approximations(std::vector<int> n){
+    double* arr = new double[n.size()];
+    for (int i=0; i<n.size(); i++) {
         arr[i]=pi_approx(n[i]).approx;
     }
 

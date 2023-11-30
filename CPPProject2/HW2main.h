@@ -2,9 +2,9 @@
 #include <vector>
 
 struct PiResults {
-        float approx;
-        float error;
+        double approx;
+        double error;
     };
 
-float* approximations(std::vector<int> n);
+double* approximations(std::vector<int> n);
 PiResults pi_approx(int N);

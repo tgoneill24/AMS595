@@ -12,13 +12,12 @@ int main() {
     vector<int> vec = {10,100,1000,10000,100000,1000000,10000000};
 
     // Get approximations for different values of N
-    float* arr = approximations(vec);
+    double* arr = approximations(vec);
 
     // Print approximations
     for (int i=0; i<7; i++) {
         cout << arr[i] << endl;
     }
-    
 
     return 0;
 }

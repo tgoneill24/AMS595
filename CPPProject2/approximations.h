@@ -1,8 +1,8 @@
 #pragma once
 
 struct PiResults {
-        float approx;
-        float error;
+        double approx;
+        double error;
     };
 
 PiResults pi_approx(int N);
